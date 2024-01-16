@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+
+  <body>
+    <!--TABELLA-->
+    <!--<table> delimita una tabella
+     <tr> table row elemento di ogni riga (riga)
+        <th> table heading ovvero intestazione (nome colonna)
+            <td> table datacell (celle delle tabelle)
+                <td colspan="2"> mettere una casella vuota(colspan serve a occupare un numero scelto di colonne)-->
+
+    <!--attenzione agli attribbuti utilizzati qui sotto perche potrebbero essere obsoleti-->
+    <table border="1" cellspacing="10" colPadding="10">
+      <th>NOME</th>
+      <th>COGNOME</th>
+      <th>DATA</th>
+      <th>INDIRIZZO</th>
+    </table>
+
+    <!--Creazione automatica usando (thead>tr>th*3)-->
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+    </table>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!--FORM-->
+    <!--I form sono le nostre possibilta per ricevere i dati dall utente-->
+    <!--form modulo invio di informazioni-->
+    <!--gli attrivuri action e method servono ad inviare i dati raccolti dai campi del sceondo modalita precise-->
+    <!--placeholder serve ad impostare un testo iniziale che sparira nel momento in cui l utente comincera a scriverci dentro-->
+
+    <form>
+      <label for=""></label>
+      <input type="text" />
+      <input type="button" value="invia il dato" />
+      <input type="checkbox" />
+
+      <!--field set per raggruppamenti di leggende-->
+      <fieldset>
+        <legend>sito web</legend>
+        <label for="website">URL</label>
+        <input type="url" placeholder="https.//www...." />
+      </fieldset>
+
+      <!--nel caso dei radio  button è importante che ogni input abbia lo stesso name altrimenti il 
+        comportamento di selezione non sara singolo-->
+
+      <fieldset>
+        <legend>fumatori</legend>
+        <label for="smoking">si</label>
+        <input type="radio" name="smoking-btn" id="smoking" />
+        <label for="smoking">no</label>
+        <input type="radio" name="smoking-btn" id="no-smoking" />
+      </fieldset>
+
+      <hr />
+      <input type="checkbox" id="webcam" />
+      <label for="webcam">attiva webcam</label>
+      <hr />
+      <br />
+
+      <label for="Il tuo feedback">Il tuo feedback</label>
+      <br />
+      <textarea placeholder="Raccontaci la tua esperienza.." id="Bio" cols="30" rows="10"></textarea>
+      <br />
+      <input type="button" value="invia" />
+
+      <!--rows altezza cols larghezza-->
+
+      <!--tramite il value possiamo apportare una trasformazione del valore testuale contenuto nella 
+        option trasformandolo nel valore conenuto nell'attributo value-->
+      <label for="LOCATION">
+        <select id="LOCATION">
+          <option value="VT">Veneto</option>
+          <option value="SC">Sicilia</option>
+          <option value="BL">Bologna</option>
+          <option value="FR">Fiuli</option>
+        </select>
+      </label>
+      <!--Il type button rende il bottone inerte per quanto riguarda l invio del form
+      l invio vero e proprio viene utilizzato -->
+    </form>
+
+    <figure>
+      <figcaption>listen</figcaption>
+      <audio controls src=""></audio>
+      <a href="">Donload audio</a>
+    </figure>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/0PagDQ_ZGRM?si=QL77q9LVyBj0efvu"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>
